@@ -5,7 +5,10 @@
 \margl1440\margr1440\vieww28900\viewh16400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 FROM tomcat\
-COPY users/gjay/.jenkins/workspace/newpipeline_test/target/ABCtechnologies-1.0.war /usr/local/tomcat\
-EXPOSE [8080]\
+\f0\fs24 \cf0 FROM tomcat
+\
+COPY abctechnologies.war /usr/local/tomcat
+\
+EXPOSE [8080]
+\
 CMD ["catalina.sh"]}
